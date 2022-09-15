@@ -1,0 +1,208 @@
+/********* BODY ***********/
+
+body {
+  background-color: rgb(158, 126, 189);
+}
+
+.padreGrid {
+  background-color: $color-blue;
+  img {
+    width: 100%;
+    &:hover {
+      transform: scale(0.9);
+      border: 2px solid $color-black;
+      border-radius: 10px;
+      box-shadow: 4px 4px white;
+      transition: 1s;
+    }
+  }
+}
+
+.section1 {
+  border: solid $color-black 3px;
+  background-color: brown;
+  background-repeat: no-repeat;
+  background-size: 3vw 8vh;
+  opacity: 5.5;
+}
+.section2 {
+  border: solid $color-black 3px;
+  background-color: cornflowerblue;
+  background-repeat: no-repeat;
+  background-size: 3vw 8vh;
+  opacity: 5.5;
+}
+.section3 {
+  border: solid $color-black 3px;
+  background-color: rgb(115, 189, 115);
+  background-repeat: no-repeat;
+  background-size: 3vw 8vh;
+  opacity: 5.5;
+}
+
+.gridPadreMul {
+  background-color: $color-blue;
+
+  .cancion {
+    border: 3px solid black;
+    text-align: center;
+    animation-name: fade-in;
+    animation-duration: 4s;
+  }
+}
+
+.tituloMultimedia {
+  grid-area: subtitulo;
+  background-color: $color-black;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 20px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.song1 {
+  grid-area: song1;
+  background-color: aqua;
+}
+.song2 {
+  grid-area: song2;
+  background-color: chartreuse;
+}
+.song3 {
+  grid-area: song3;
+  background-color: crimson;
+}
+.song4 {
+  grid-area: song4;
+  background-color: hotpink;
+}
+.song5 {
+  grid-area: song5;
+  background-color: purple;
+}
+
+/*********** MAP GET **************/
+$lyricsEstilo: (
+  borde: 3px solid black,
+  radio: 15px,
+);
+
+.padrelyrics {
+  h3 {
+    border: map-get($lyricsEstilo, borde);
+    border-radius: map-get($lyricsEstilo, radio);
+  }
+}
+
+.padreGrid img:hover {
+  transform: scale(0.9);
+  border: 20px solid black;
+  border-radius: 10px;
+  box-shadow: 4px 4px rgb(199, 81, 81);
+  transition: 1s;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+/*LYRICS*/
+
+.lyricz {
+  border: 5px solid black;
+  background: rgb(63, 94, 251);
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(70, 252, 222, 1) 100%
+  );
+  margin-left: 25%;
+  margin-right: 25%;
+  h1 {
+    text-align: center;
+    font-size: 3vw;
+    text-shadow: 3px 3px white;
+    height: 8vh;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 2vw;
+  }
+
+  p {
+    text-align: center;
+    font-size: 2vw;
+    &:hover {
+      font-size: 3vw;
+
+      color: white;
+    }
+  }
+}
+
+/* ******* */
+.aboutMe {
+  background: rgb(63, 94, 251);
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(70, 252, 222, 1) 100%
+  );
+  border: 3px solid black;
+  margin: 10px;
+  padding: 5px;
+}
+
+.rock {
+  width: 50%;
+  height: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  border-radius: 4%;
+}
+
+.padreGrid img {
+  &:hover {
+    transform: scale(0.9);
+    border: 20px solid black;
+    border-radius: 10px;
+    box-shadow: 4px 4px rgb(199, 81, 81);
+    transition: 1s;
+  }
+}
+
+p {
+  font-size: 40px;
+}
+
+/* contactanos */
+
+.form {
+  background: rgb(63, 94, 251);
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(70, 252, 222, 1) 100%
+  );
+  border: 5px solid black;
+
+  margin-left: 25%;
+  margin-right: 25%;
+  padding: 150px;
+  input {
+    padding: 15px;
+    margin: 35px;
+  }
+  label {
+    margin-right: 25px;
+  }
+}
+
+.form {
+  font-size: 40px;
+}
+
+.gridFooter {
+  bottom: 80px;
+}

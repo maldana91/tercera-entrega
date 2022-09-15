@@ -1,0 +1,16 @@
+/******** FOOTER *******/
+
+.gridFooter {
+  background-color: $color-black;
+  text-align: center;
+  color: white;
+  background-color: $color-black;
+  text-align: center;
+  color: white;
+  height: 15vh;
+}
+/************ EXTEND *************/
+
+.tituloFooter {
+  @extend .tituloMultimedia;
+}
